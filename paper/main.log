@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Termux) (preloaded format=pdflatex 2025.4.4)  21 JUL 2025 01:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Termux) (preloaded format=pdflatex 2025.4.4)  30 JUL 2025 07:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1693,40 +1693,45 @@ Package hyperref Info: Link coloring OFF on input line 70.
 
 
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16
-8.
+5.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/jknapl
 tx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-68.
+65.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-68.
+65.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-68.
+65.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-68.
+65.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+Underfull \hbox (badness 1460) in paragraph at lines 173--175
+[]\OT1/txr/m/n/10 Peer-to-Peer Com-mu-ni-ca-tion with ESP-NOW ESP32
+ []
+
+
 
 [1{/data/data/com.termux/files/usr/share/texlive/2025/texmf-var/fonts/map/pdfte
 x/updmap/pdftex.map}{/data/data/com.termux/files/usr/share/texlive/2025/texmf-d
@@ -1734,25 +1739,30 @@ ist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-<figs/Swarm Block.png, id=121, 813.0375pt x 1016.29688pt>
-File: figs/Swarm Block.png Graphic file (type png)
-<use figs/Swarm Block.png>
-Package pdftex.def Info: figs/Swarm Block.png  used on input line 200.
-(pdftex.def)             Requested size: 252.0pt x 314.98674pt.
-
-
-
-
-[2 <./figs/Swarm Block.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2
-99.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
+92.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
+<figs/Swarm Block.png, id=113, 1027.84pt x 1284.8pt>
+File: figs/Swarm Block.png Graphic file (type png)
+<use figs/Swarm Block.png>
+Package pdftex.def Info: figs/Swarm Block.png  used on input line 216.
+(pdftex.def)             Requested size: 252.0pt x 314.9846pt.
 
-(./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+
+[2 <./figs/Swarm Block.png>]
+
+
+
+[3] (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 []$\OT1/txr/m/n/8 https : / / docs . espressif . com / projects / esp-[]idf / e
 n / latest / esp32 / api-[]reference /
@@ -1772,20 +1782,24 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[3] (./main.aux)
+
+
+[4
+
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D7BE518F4C5ED106E8B7B4316C40530B;2648.
+(rerunfilecheck)             Checksum: C957BFD2210FD88D5DC7B4E6C1CDDDDA;2110.
  ) 
 Here is how much of TeX's memory you used:
- 50852 strings out of 473197
- 1198068 string characters out of 5701897
- 1820850 words of memory out of 5000000
- 73262 multiletter control sequences out of 15000+600000
- 636108 words of font info for 202 fonts, out of 8000000 for 9000
+ 50860 strings out of 473197
+ 1198111 string characters out of 5701897
+ 1835850 words of memory out of 5000000
+ 73263 multiletter control sequences out of 15000+600000
+ 636074 words of font info for 202 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  102i,8n,107p,1172b,1169s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/pu
@@ -1800,10 +1814,10 @@ re/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.te
 rmux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on main.pdf (3 pages, 628176 bytes).
+Output written on main.pdf (4 pages, 157259 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
- 62 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
