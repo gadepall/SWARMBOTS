@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Termux) (preloaded format=pdflatex 2025.4.4)  31 JUL 2025 11:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Termux) (preloaded format=pdflatex 2025.4.4)  31 JUL 2025 11:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1727,11 +1727,6 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
 s/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 1460) in paragraph at lines 174--176
-[]\OT1/txr/m/n/10 Peer-to-Peer Com-mu-ni-ca-tion with ESP-NOW ESP32
- []
-
-
 
 [1{/data/data/com.termux/files/usr/share/texlive/2025/texmf-var/fonts/map/pdfte
 x/updmap/pdftex.map}{/data/data/com.termux/files/usr/share/texlive/2025/texmf-d
@@ -1797,7 +1792,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  50860 strings out of 473197
  1198111 string characters out of 5701897
- 1836851 words of memory out of 5000000
+ 1835851 words of memory out of 5000000
  73263 multiletter control sequences out of 15000+600000
  636074 words of font info for 202 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1814,7 +1809,7 @@ re/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.te
 rmux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on main.pdf (4 pages, 157259 bytes).
+Output written on main.pdf (4 pages, 158583 bytes).
 PDF statistics:
  229 PDF objects out of 1000 (max. 8388607)
  201 compressed objects within 3 object streams
