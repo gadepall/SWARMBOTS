@@ -145,20 +145,20 @@ The evolution of robotics has enabled autonomous systems across logistics, agric
 
 There is a lack of low-cost, modular systems that can perform indoor multi-UGV mapping and task execution without relying on infrastructure-dependent technologies. Current methods are either too expensive, too centralized, or lack user-friendly interfaces for real-time coordination in constrained environments.
 
-\noindent This project addresses that gap by proposing a centralized control system using ESP32 microcontrollers, ultrasonic sensors~\cite{arduino_hcsr04}, and ESP-NOW communication~\cite{espnowguide}. An intuitive web-based GUI built with SPIFFS~\cite{randomnerd2024esp32} allows users to assign tasks and direct swarm behavior interactively, without external routing hardware. Our framework supports scalable swarm control for research and prototyping~\cite{jin2024multi, mdpi2022hierarchical, gadepalli2023future}.
+\noindent This project addresses that gap by proposing a centralized control system using ESP32 microcontrollers, ultrasonic sensors~\cite{arduino_hcsr04}, and ESP-NOW communication~\cite{espnowguide}. An intuitive web-based GUI built with SPIFFS~\cite{randomnerd2024esp32} allows users to assign tasks and direct swarm behavior interactively, without external routing hardware. Our framework supports scalable swarm control for research and prototyping~\cite{jin2024multi, mdpi2022hierarchical}.
 \section{Related Work}
 \label{sec:related-work}
 
 Multi-robot coordination has been extensively studied, with emphasis on areas like SLAM, dynamic task allocation, and swarm behavior~\cite{brambilla2013swarm, kalra2005hoplite}. For instance, Jin et al. (2024) introduced a deep reinforcement learning model (DDQN) combined with Ant Colony Optimization for dynamic task assignment in UGV swarms~\cite{jin2024multi}. Similarly, hierarchical approaches for UAV-UGV cooperation using global and local planners have been explored in~\cite{mdpi2022hierarchical}.
 
-Despite these advances, minimal focus exists on using affordable sensors (like HC-SR04) in tandem with ESP-based embedded systems to create real-time indoor mapping systems with GUI-driven task delegation~\cite{arduino_hcsr04, espnowguide, randomnerd2024esp32, gadepalli2023future}. This work fills that gap by integrating time-aware task distribution, ESP-NOW communication, and manual path annotation, all under a cost-efficient architecture.
+Despite these advances, minimal focus exists on using affordable sensors (like HC-SR04) in tandem with ESP-based embedded systems to create real-time indoor mapping systems with GUI-driven task delegation~\cite{arduino_hcsr04, espnowguide, randomnerd2024esp32}. This work fills that gap by integrating time-aware task distribution, ESP-NOW communication, and manual path annotation, all under a cost-efficient architecture.
 \section{Proposed Navigation System}
 \label{sec:proposed-system}
 
 The proposed architecture for multi-UGV coordination is detailed in this section. Each UGV contains hardware for communication and autonomous navigation. With a central master UGV, the system can autonomously execute tasks. Key components of the system include the following.
 
 \subsection{Collaborative Mapping Using Ultrasonic Sensors}
-Ultrasonic modules (HC-SR04) mounted on the master UGV scan surroundings using a grid traversal strategy. Position is estimated via RPM-based dead reckoning, and obstacle data is processed into a 2D occupancy grid map~\cite{arduino_hcsr04, gadepalli2023future}. The complete environment map is constructed in real-time and visualized via the GUI.
+Ultrasonic modules (HC-SR04) mounted on the master UGV scan surroundings using a grid traversal strategy. Position is estimated via RPM-based dead reckoning, and obstacle data is processed into a 2D occupancy grid map~\cite{arduino_hcsr04}. The complete environment map is constructed in real-time and visualized via the GUI.
 
 \subsection{Dead Reckoning for Localization}
 Each UGV computes its position based on wheel rotations (RPM), using:
@@ -250,7 +250,7 @@ This time-aware strategy leads to smarter workload distribution, ensuring parall
 
 
 \subsection{Execution Phase}
-Upon receiving their assigned task coordinates, slave UGVs begin autonomous navigation. Navigation is achieved through time-based motor control or simple PID algorithms~\cite{gadepalli2023future}. On reaching the target, each UGV performs the associated operation, such as flashing an LED, taking sensor readings, or signaling task completion to the master.
+Upon receiving their assigned task coordinates, slave UGVs begin autonomous navigation. Navigation is achieved through time-based motor control or simple PID algorithms. On reaching the target, each UGV performs the associated operation, such as flashing an LED, taking sensor readings, or signaling task completion to the master.
 
 
 \section{Implementation}
@@ -258,7 +258,7 @@ Upon receiving their assigned task coordinates, slave UGVs begin autonomous navi
 
 The complete source code and setup for the SwarmBots system are available on 
 \begin{center}
-  \url{https://github.com/Sumanth033/SWARMBOTS}
+  \url{https://github.com/gadepall/SWARMBOTS}
 \end{center}
 
 \subsection{Assets}

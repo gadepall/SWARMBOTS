@@ -52,9 +52,4 @@ X.~Jin \emph{et~al.}, ``Multi-ugv path planning and task assignment via ddqn +
 {MDPI Robotics}, ``Hierarchical plan execution for cooperative uxv missions,''
   \emph{Robotics}, 2022.
 
-\bibitem{gadepalli2023future}
-V.~Gadepalli, ``{Future Wireless Communication: Embedded Systems and Robotics
-  Tutorials},'' 2023, [Online]. Available:
-  \url{https://github.com/varun-iith/esp32-robotics}.
-
 \end{thebibliography}

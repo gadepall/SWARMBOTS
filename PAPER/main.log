@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.4.29)  25 JUL 2025 06:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.4.29)  31 JUL 2025 05:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1498,7 +1498,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-<figs/Swarm Block.png, id=154, 1027.84pt x 1284.8pt>
+<figs/Swarm Block.png, id=151, 1027.84pt x 1284.8pt>
 File: figs/Swarm Block.png Graphic file (type png)
 <use figs/Swarm Block.png>
 Package pdftex.def Info: figs/Swarm Block.png  used on input line 216.
@@ -1528,10 +1528,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DCAEBB1FAEE153886DA5A4B1175FC597;4530.
  ) 
 Here is how much of TeX's memory you used:
- 48792 strings out of 476091
- 1124027 string characters out of 5794081
+ 48790 strings out of 476091
+ 1123982 string characters out of 5794081
  1903330 words of memory out of 5000000
- 68328 multiletter control sequences out of 15000+600000
+ 68327 multiletter control sequences out of 15000+600000
  589524 words of font info for 198 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  102i,8n,104p,1172b,1175s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1544,10 +1544,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 159329 bytes).
+Output written on main.pdf (4 pages, 158929 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 262 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
