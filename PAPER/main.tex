@@ -155,6 +155,26 @@ Despite these advances, minimal focus exists on using affordable sensors (like H
 \section{Proposed Navigation System}
 \label{sec:proposed-system}
 
+\begin{table}[htbp]
+\caption{List of Symbols Used in Proposed Navigation System}
+\centering
+\begin{tabular}{|c|l|}
+\hline
+\textbf{Symbol} & \textbf{Description} \\
+\hline
+\(d\) & Distance to be traveled \\
+\(D\) & Diameter of the wheel \\
+\(r\) & Radius of the wheel \\
+\(L\) & Distance between the wheels (wheelbase) \\
+\(\theta\) & Angle of rotation in degrees \\
+\(\mathrm{RPM}\) & Rotations Per Minute of the motor \\
+\(t_{\mathrm{linear}}\) & Time to move forward by \(d\) cm \\
+\(t_{\mathrm{turn}}\) & Time to rotate by angle \(\theta\) \\
+\hline
+\end{tabular}
+\label{tab:symbols}
+\end{table}
+
 The proposed architecture for multi-UGV coordination is detailed in this section. Each UGV contains hardware for communication and autonomous navigation. With a central master UGV, the system can autonomously execute tasks. Key components of the system include the following.
 
 \subsection{Collaborative Mapping Using Ultrasonic Sensors}
@@ -213,7 +233,7 @@ Firmware modules are structured to separate communication, control logic, sensor
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=\columnwidth]{figs/Swarm Block.png}
+    \includegraphics[width=\columnwidth]{Swarm Block.png}
 \caption{SwarmBots system architecture: GUI-driven task allocation, ESP‑NOW communication, autonomous execution, and status feedback.}
 
 
