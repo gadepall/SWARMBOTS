@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Termux) (preloaded format=pdflatex 2025.4.4)  31 JUL 2025 11:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Termux) (preloaded format=pdflatex 2025.4.4)  15 AUG 2025 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1693,35 +1693,35 @@ Package hyperref Info: Link coloring OFF on input line 70.
 
 
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 16
-6.
+8.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/jknapl
 tx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-66.
+68.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-66.
+68.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-66.
+68.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-66.
+68.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/utxsyc.fd
@@ -1734,23 +1734,22 @@ ist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
-93.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2
+15.
 
 (/data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/tex/latex/txfont
 s/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-<figs/Swarm Block.png, id=113, 1027.84pt x 1284.8pt>
-File: figs/Swarm Block.png Graphic file (type png)
-<use figs/Swarm Block.png>
-Package pdftex.def Info: figs/Swarm Block.png  used on input line 216.
-(pdftex.def)             Requested size: 252.0pt x 314.9846pt.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+<figs/Swarm Block.png, id=112, 1027.84pt x 1284.8pt>
+File: figs/Swarm Block.png Graphic file (type png)
+<use figs/Swarm Block.png>
+Package pdftex.def Info: figs/Swarm Block.png  used on input line 239.
+(pdftex.def)             Requested size: 252.0pt x 314.9846pt.
 
 
 [2 <./figs/Swarm Block.png>]
@@ -1787,16 +1786,16 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C957BFD2210FD88D5DC7B4E6C1CDDDDA;2110.
+(rerunfilecheck)             Checksum: C7454D681D15C5A3201ABDD2D6EC6093;2110.
  ) 
 Here is how much of TeX's memory you used:
- 50860 strings out of 473197
- 1198111 string characters out of 5701897
+ 50875 strings out of 473197
+ 1198332 string characters out of 5701897
  1835851 words of memory out of 5000000
- 73263 multiletter control sequences out of 15000+600000
- 636074 words of font info for 202 fonts, out of 8000000 for 9000
+ 73272 multiletter control sequences out of 15000+600000
+ 638980 words of font info for 207 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 102i,8n,107p,1172b,1169s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,12n,107p,1172b,1169s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/pu
 blic/txfonts/rtcxr.pfb></data/data/com.termux/files/usr/share/texlive/2025/texm
 f-dist/fonts/type1/public/txfonts/rtxmi.pfb></data/data/com.termux/files/usr/sh
@@ -1809,10 +1808,10 @@ re/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></data/data/com.te
 rmux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
 /data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on main.pdf (4 pages, 158583 bytes).
+Output written on main.pdf (4 pages, 160094 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
