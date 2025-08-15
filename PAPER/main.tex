@@ -155,27 +155,46 @@ Despite these advances, minimal focus exists on using affordable sensors (like H
 \section{Proposed Navigation System}
 \label{sec:proposed-system}
 
+\begin{table}[htbp]
+\caption{List of Symbols Used in Proposed Navigation System}
+\centering
+\begin{tabular}{|c|l|}
+\hline
+\textbf{Symbol} & \textbf{Description} \\
+\hline
+\(d\) & Distance to be traveled \\
+\(D\) & Diameter of the wheel \\
+\(r\) & Radius of the wheel \\
+\(L\) & Distance between the wheels (wheelbase) \\
+\(\theta\) & Angle of rotation in degrees \\
+\(\mathrm{RPM}\) & Rotations Per Minute of the motor \\
+\(t_{\mathrm{linear}}\) & Time to move forward by \(d\) cm \\
+\(t_{\mathrm{turn}}\) & Time to rotate by angle \(\theta\) \\
+\hline
+\end{tabular}
+\label{tab:symbols}
+\end{table}
+
 The proposed architecture for multi-UGV coordination is detailed in this section. Each UGV contains hardware for communication and autonomous navigation. With a central master UGV, the system can autonomously execute tasks. Key components of the system include the following.
 
-\begin{enumerate}
-\item {\em Collaborative Mapping Using Ultrasonic Sensors:}
+\subsection{Collaborative Mapping Using Ultrasonic Sensors}
 Ultrasonic modules (HC-SR04) mounted on the master UGV scan surroundings using a grid traversal strategy. Position is estimated via RPM-based dead reckoning, and obstacle data is processed into a 2D occupancy grid map~\cite{arduino_hcsr04}. The complete environment map is constructed in real-time and visualized via the GUI.
 
-\item {\em Dead Reckoning for Localization:}
+\subsection{Dead Reckoning for Localization}
 Each UGV computes its position based on wheel rotations (RPM), using:
 \begin{equation}
 \text{Distance} = \frac{\text{RPM} \times \pi \times \text{Diameter} \times \Delta t}{60}
 \end{equation}
 This allows real-time navigation feedback without relying on GPS or encoders.
 
-\item {\em Time-Aware Task Distribution Algorithm: }
+\subsection{Time-Aware Task Distribution Algorithm}
 After the user assigns points via the GUI, the master UGV estimates travel time to each target. Tasks are segmented and distributed proportionally to each slave’s expected duration to maximize parallelism and reduce idle time~\cite{jin2024multi}. A more detailed explanation of the algorithm is provided in Section~\ref{subsec:task_dist}.
 
-\item {\em Peer-to-Peer Communication with ESP-NOW: }
+\subsection{Peer-to-Peer Communication with ESP-NOW}
 ESP32 modules communicate using ESP-NOW—a low-latency, MAC-based protocol. It eliminates the need for a Wi-Fi router, offering robustness for offline, indoor multi-agent systems~\cite{espnowguide}.
 
 
-\item {\em Time-Based Control for Distance and Turning: }
+\subsection{Time-Based Control for Distance and Turning}
 To navigate without GPS or encoders, each UGV calculates in advance the motor ON-time required to travel a specific distance or rotate by a desired angle. This is done using motor RPM, wheel diameter, and wheelbase geometry.
 
 For linear motion, the time to travel a distance $d$ is computed as:
@@ -192,7 +211,7 @@ where $L$ is the effective turning circumference (typically the distance between
 
 These time durations are precomputed and hardcoded for commonly used distances and angles (e.g., 10 cm forward, 90° turn), enabling accurate dead reckoning using only timers and motor control loops. This method allows reliable motion in resource-constrained setups without external sensors or feedback mechanisms.
 
-\item {\em GUI-Based Human Interaction Layer: }
+\subsection{GUI-Based Human Interaction Layer}
 \label{subsec:3.6}
 The GUI is hosted on the master UGV and serves as the primary human-machine interface~\cite{randomnerd2024esp32}. It enables the following functionalities:
 \begin{itemize}
@@ -202,7 +221,8 @@ The GUI is hosted on the master UGV and serves as the primary human-machine inte
     \item Task status visualization Task execution states (e.g., pending, in-progress, completed) are reflected dynamically on the GUI.
 \end{itemize}
 
-\item {\em Embedded Software Architecture: }
+
+\subsection{Embedded Software Architecture}
 Each UGV runs modular firmware developed using either the ESP-IDF or Arduino framework, depending on complexity. The software architecture is divided into:
 \begin{itemize}
     \item {Master UGV:} Responsible for path segmentation, task scheduling, and GUI synchronization. It acts as a bridge between the user and slave units.
@@ -213,24 +233,23 @@ Firmware modules are structured to separate communication, control logic, sensor
 
 \begin{figure}[t]
     \centering
-    \includegraphics[width=\columnwidth]{figs/Swarm Block.png}
+    \includegraphics[width=\columnwidth]{Swarm Block.png}
 \caption{SwarmBots system architecture: GUI-driven task allocation, ESP‑NOW communication, autonomous execution, and status feedback.}
 
 
   \label{fig:system-architecture}
 \end{figure}
-\end{enumerate}
+
 \section{Methodology}
 \label{sec:Methodology}
 
-\begin{enumerate}
-\item {Mapping Phase}
+\subsection{Mapping Phase}
 The master UGV performs 2D environmental mapping by traversing the environment in a structured grid pattern. It uses ultrasonic distance sensors~\cite{arduino_hcsr04} to gather obstacle data, which is fused with positional estimates obtained via dead reckoning~\cite{kalra2005hoplite}. A 2D occupancy grid is constructed dynamically to represent free and occupied spaces in the environment.
 
-\item {GUI-Based Task Assignment}
+\subsection{GUI-Based Task Assignment}
 The real-time occupancy grid is rendered on the GUI, allowing users to visually inspect the environment and select target task points, as mentioned in Section ~\ref{subsec:3.6}. 
 
-\item {Task Distribution Strategy}
+\subsection{Task Distribution Strategy}
 \label{subsec:task_dist}
 Once the master UGV receives the list of task coordinates from the GUI, it computes the estimated time each slave UGV would take to reach each target point. This estimation is based on straight-line distance and the kinematic model of the robot.
 
@@ -250,10 +269,10 @@ The master then applies one of two strategies:
 This time-aware strategy leads to smarter workload distribution, ensuring parallel execution while minimizing travel time, energy consumption, and path overlaps~\cite{jin2024multi}. The final allocation is communicated to each UGV along with the necessary movement instructions.
 
 
-\item {Execution Phase}
+\subsection{Execution Phase}
 Upon receiving their assigned task coordinates, slave UGVs begin autonomous navigation. Navigation is achieved through time-based motor control or simple PID algorithms. On reaching the target, each UGV performs the associated operation, such as flashing an LED, taking sensor readings, or signaling task completion to the master.
 
-\end{enumerate}
+
 \section{Implementation}
 \label{sec:Implementation}
 
